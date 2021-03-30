@@ -61,8 +61,10 @@ body {
 /* scroll bounce animation */
 
 .scroll {
+    position: fixed;
     overflow-x: hidden;
-    margin-left: 10rem;
+    margin-top: 10rem;
+    margin-left: 95%;
     font-size: medium;
     font-family: 'Open-sans', sans-serif;
     writing-mode: vertical-rl;
@@ -93,6 +95,7 @@ body {
     font-size: 4vw;
     margin-left: 2.4rem;
     margin-top: 1vh;
+    margin-bottom: -15px;
 }
 
 .header {
@@ -132,8 +135,26 @@ margin-left: 2.4rem;
     margin: auto;
 }
 
+.panel-1 {
+    size: 100vh;
+}
+
+.panel-2 {
+    overflow: hidden !important;
+    size: 100vh;
+}
 
 
+.contact-header {
+
+margin: auto;
+text-align: center;
+font-size: 18vw;
+font-family: 'Oswald', sans-serif;
+-webkit-text-stroke: 1px #252525;
+color: transparent;
+
+}
 
 
 

@@ -2,6 +2,16 @@
 gsap.registerPlugin(ScrollTrigger);
 
 let tl = gsap.timeline({ defaults: { opacity: 0, ease: "back" } });
+let tl2 = gsap.timeline({  
+    scrollTrigger: {
+    trigger: ".hi",
+    start: "top top",
+    scrub: 3
+    
+}
+
+
+});
 
 function init() {
 
@@ -29,7 +39,7 @@ function init() {
         .from(".hi", { ease: "linear", duration: 1 })
         .from(".header", { y: -150, duration: 2.5 }, "-=.4")
         .from(".bio", { y: 40, duration: 1, ease: "power4" }, "-=1")
-        .from(".scroll", { y: 40, duration: 1, ease: "power4" }, "+=0.2")
+        .from(".scroll", {duration: 2}, "+=0.2")
 
         // to be scrolltriggered
 
@@ -43,31 +53,33 @@ function init() {
 
     // to be scrolltriggered
 
-let tl2 = gsap.timeline({  
-    scrollTrigger: {
-    trigger: "#project-header",
-    start: "top 60%%",
+   
 
-}
-
-
-})
-
-    tl2.from("#project-header", { y: 100, opacity: 0})
-        .to(".hi", { y: -100, opacity: 0, duration: 1 })
-        .to(".header", { y: -250, opacity: 0.5, duration: 4 }, "<.3")
-        .to(".bio", { y: -300, opacity: 0, duration: 4 }, "<.2")
-        .from(".navbar", { opacity: 0, duration: 4 }, "<.2")
+    tl2.to(".hi", {  opacity: 0 })
+        .to(".header", {  opacity: 0, duration: 4 }, "<.3")
+        .to(".bio", { opacity: 0, duration: 4 }, "<.2")
+        .from(".navbar", { opacity: 0, duration: 4 }, "<1")
 
 
 
     gsap.from("#projects > .col-sm", {
         scrollTrigger: {
             trigger: "#projects > .col-sm",
-            start: "top 80%"
+            start: "top 80%",
+            scrub: 2,
+            markers:true
         },
         y: 100, opacity: 0, ease: "back", stagger: .1, duration: 2
-    })
+    });
+
+    gsap.from("#project-header", {
+        scrollTrigger: {
+            trigger: ".project-header",
+            start: "top 60%",
+            scrub:true
+        },
+         y: 100, opacity: 0
+    });
 
 
       
