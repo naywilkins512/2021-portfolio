@@ -1,6 +1,20 @@
 
 *{cursor: none;}
 
+/* .panel-2 {
+    position: absolute;
+} */
+
+.panel-3 {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    z-index: 2000;
+    position: absolute;
+}
+
+
 a {
     color: #252525;
     border-radius: 8px;
@@ -91,10 +105,10 @@ body {
 
 .hi {
     color: #252525;
-    /* z-index: 2000; */
+    z-index: -1;
     font-size: 4vw;
     margin-left: 2.4rem;
-    margin-top: 1vh;
+    margin-top: 10vh;
     margin-bottom: -15px;
 }
 
@@ -135,14 +149,6 @@ margin-left: 2.4rem;
     margin: auto;
 }
 
-.panel-1 {
-    size: 100vh;
-}
-
-.panel-2 {
-    overflow: hidden !important;
-    size: 100vh;
-}
 
 
 .contact-header {
