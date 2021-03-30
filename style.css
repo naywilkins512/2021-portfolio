@@ -1,0 +1,140 @@
+
+*{cursor: none;}
+
+a {
+    color: #252525;
+    border-radius: 8px;
+    background-color: none;
+    transform-origin: 50% 50%;
+    transition: background-color 1s ease;
+    transition: color 1s ease;
+    
+}
+
+a:hover {
+    transition: color 1s ease;
+    transition: background-color 1s ease;
+    color: #ffffff;
+    background-color: #141414;
+    
+    
+    
+  }
+
+
+body {
+    overflow-x: hidden;
+    visibility: hidden;
+    font-family: 'Oswald', sans-serif;
+}
+
+.cursor{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    mix-blend-mode:screen;
+    opacity: .8;
+    z-index: 2000;
+    user-select: none;
+    pointer-events: none;
+}
+
+.follower{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    background-color: #ff5850;
+    box-shadow: 0px 0px 10px 1px #ff5850;
+    border-radius: 50%;
+    opacity: 0.7;
+    user-select: none;
+    pointer-events: none;
+}
+
+
+/* scroll bounce animation */
+
+.scroll {
+    overflow-x: hidden;
+    margin-left: 10rem;
+    font-size: medium;
+    font-family: 'Open-sans', sans-serif;
+    writing-mode: vertical-rl;
+    animation: bounce 2s infinite;
+    transform: translate(-50%, -50%);
+
+}
+
+
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+/* end scroll bounce animation */
+
+
+.hi {
+    color: #252525;
+    /* z-index: 2000; */
+    font-size: 4vw;
+    margin-left: 2.4rem;
+    margin-top: 1vh;
+}
+
+.header {
+    z-index: -1;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin: auto;
+    text-align: center;
+    font-size: 18vw;
+    font-family: 'Oswald', sans-serif;
+    -webkit-text-stroke: 1px #252525;
+    color: transparent;
+    
+}
+
+.bio {
+font-size: 4vw;
+margin-left: 2.4rem;
+}
+
+.project-header{
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 15vw;
+    font-family: 'Oswald', sans-serif;
+    -webkit-text-stroke: 1px #252525;
+    color: transparent;
+
+}
+
+.navbar-nav {
+    font-size: 1.3rem;
+    padding-top: 15px;
+    z-index: 1;
+    display: inline-flex;
+    justify-content: space-evenly !important;
+    margin: auto;
+}
+
+
+
+
+
+
+  
