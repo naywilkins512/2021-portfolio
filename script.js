@@ -5,8 +5,8 @@ let tl = gsap.timeline({ defaults: { opacity: 0, ease: "back" } });
 let tl2 = gsap.timeline({
     scrollTrigger: {
         trigger: ".hi",
-        start: "top top",
-        scrub: 2
+        start: "top 5%",
+        scrub: 1,
 
     }
 
@@ -56,8 +56,8 @@ function init() {
 
 
     tl2.to(".hi", { opacity: 0 })
-        .to(".header", { duration: 4 }, "<.3")
-        .to(".bio", { opacity: 0, duration: 4 }, "<.2")
+        .to(".bio", { opacity: 0})
+        // .to(".header", { y:-300,duration: 4 })
     // .from(".navbar", { opacity: 0, duration: 4 }, "<1")
 
 
@@ -65,8 +65,10 @@ function init() {
     gsap.from("#projects > .col-sm", {
         scrollTrigger: {
             trigger: "#projects > .col-sm",
-            start: "top 80%",
+            start: "top 50%",
+            end: "bottom 50%",
             scrub: 2,
+    
 
         },
         y: 100, opacity: 0, ease: "back", stagger: .1, duration: 2
