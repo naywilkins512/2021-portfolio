@@ -4,9 +4,11 @@ gsap.registerPlugin(ScrollTrigger);
 let tl = gsap.timeline({ defaults: { opacity: 0, ease: "back" } });
 let tl2 = gsap.timeline({
     scrollTrigger: {
-        trigger: ".hi",
-        start: "top 5%",
+        trigger: ".panel-1",
+        start: "top top",
         scrub: 1,
+        pin: true,
+        pinSpacing: false
 
     }
 
@@ -55,9 +57,13 @@ function init() {
 
 
 
-    tl2.to(".hi", { opacity: 0 })
-        .to(".bio", { opacity: 0}, "<.2")
-        // .to(".header", { opacity:0 })
+    tl2.from(".panel-2", { opacity: 0 })
+        .to(".bio", { opacity: 0 })
+        .to(".header", { opacity: 0 })
+        .to(".hi", { opacity: 0 })
+
+
+
     // .from(".navbar", { opacity: 0, duration: 4 }, "<1")
 
 
@@ -67,7 +73,7 @@ function init() {
             start: "top 60%",
             end: "bottom 40%",
             scrub: 1,
-            
+
 
         },
         y: 100, opacity: 0
@@ -78,10 +84,8 @@ function init() {
         scrollTrigger: {
             trigger: "#projects > .col-sm",
             start: "top 80%",
-            end: "top 40%",
-            scrub: 1,
-            
-    
+            end: "bottom 40%",
+            scrub: 1
 
         },
         y: 100, opacity: 0, ease: "back", stagger: .1, duration: 2
@@ -93,12 +97,26 @@ function init() {
             start: "top 90%",
             end: "bottom bottom",
             scrub: 1,
-            
-            
+
+
 
         },
         y: 100, opacity: 0
     });
+
+    // code for animating projects out when you scroll to contact
+
+    // gsap.to("#projects > .col-sm", {
+    //     scrollTrigger: {
+    //         trigger: "#projects > .col-sm",
+    //         start: "top 20%",
+    //         end: "bottom top",
+    //         markers:true
+
+    //     },
+    //     y: 10, opacity: 0, ease: "back", stagger: .1, duration: 2
+    // });
+
 
     gsap.from(".navbar", {
         scrollTrigger: {
@@ -106,8 +124,8 @@ function init() {
             start: "top bottom",
             end: "bottom bottom",
             scrub: 1,
-            markers:true
-            
+
+
 
         },
         y: 100, opacity: 0
