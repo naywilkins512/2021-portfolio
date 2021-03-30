@@ -56,45 +56,89 @@ function init() {
 
 
     tl2.to(".hi", { opacity: 0 })
-        .to(".bio", { opacity: 0})
-        // .to(".header", { y:-300,duration: 4 })
+        .to(".bio", { opacity: 0}, "<.2")
+        // .to(".header", { opacity:0 })
     // .from(".navbar", { opacity: 0, duration: 4 }, "<1")
 
+
+    gsap.from("#project-header", {
+        scrollTrigger: {
+            trigger: ".project-header",
+            start: "top 60%",
+            end: "bottom 40%",
+            scrub: 1,
+            
+
+        },
+        y: 100, opacity: 0
+    });
 
 
     gsap.from("#projects > .col-sm", {
         scrollTrigger: {
             trigger: "#projects > .col-sm",
-            start: "top 50%",
-            end: "bottom 50%",
-            scrub: 2,
+            start: "top 80%",
+            end: "top 40%",
+            scrub: 1,
+            
     
 
         },
         y: 100, opacity: 0, ease: "back", stagger: .1, duration: 2
     });
 
-    gsap.from("#project-header", {
+    gsap.from(".contact-header", {
         scrollTrigger: {
-            trigger: ".project-header",
-            start: "top 60%",
-            scrub: true,
+            trigger: ".contact-header",
+            start: "top 90%",
+            end: "bottom bottom",
+            scrub: 1,
+            
+            
+
+        },
+        y: 100, opacity: 0
+    });
+
+    gsap.from(".navbar", {
+        scrollTrigger: {
+            trigger: ".navbar",
+            start: "top bottom",
+            end: "bottom bottom",
+            scrub: 1,
+            markers:true
+            
+
         },
         y: 100, opacity: 0
     });
 
 
-    gsap.from(".panel-2", {
-        scrollTrigger: {
-            trigger: ".panel-1",
-            start: "top top",
-            end: "100%",
-            scrub:true,
-            pin:true,
-            anticipatePin:1,
-        },
-        yPercent: 100
-    })
+
+    // gsap.from(".panel-2", {
+    //     scrollTrigger: {
+    //         trigger: ".panel-1",
+    //         start: "top top",
+    //         end: "100%",
+    //         scrub:true,
+    //         pin:true,
+    //         anticipatePin:1,
+    //     },
+    //     yPercent: 100
+    // })
+
+
+    // gsap.from(".panel-3", {
+    //     scrollTrigger: {
+    //         trigger: ".panel-2",
+    //         start: "top top",
+    //         end: "100%",
+    //         scrub:true,
+    //         pin:true,
+    //         anticipatePin:1,
+    //     },
+    //     yPercent: 100
+    // })
 
     // gsap.from(".panel-3", {
     //     scrollTrigger: {
