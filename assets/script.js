@@ -191,7 +191,11 @@ function init() {
 }
 
 
-
+document.getElementById("top").addEventListener( "click", () => window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+}));
+  
 
 
 //load screen function calling

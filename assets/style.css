@@ -190,7 +190,7 @@ margin-left: 2.4rem;
     padding-top: 15px;
     z-index: 2000;
     display: inline-flex;
-    justify-content: space-evenly !important;
+    justify-content: space-between !important;
     margin: auto;
 }
 
@@ -207,6 +207,10 @@ color: white;
 
 }
 
+
+#top {
+  margin-top: 20%;
+}
 
 
 
