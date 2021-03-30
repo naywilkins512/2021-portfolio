@@ -6,9 +6,24 @@ let tl2 = gsap.timeline({
     scrollTrigger: {
         trigger: ".panel-1",
         start: "top top",
-        scrub: 1,
+        end: "bottom top",
         pin: true,
-        pinSpacing: false
+        scrub:true,
+        pinSpacing: false,
+
+    }
+
+
+});
+
+let tl3 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".panel-2",
+        start: "top top",
+        end: "bottom top",
+        pin: true,
+        scrub:2,
+        pinSpacing: false,
 
     }
 
@@ -27,7 +42,7 @@ function init() {
     var cur = document.querySelector('.cursor');
 
     window.addEventListener('mousemove', e => {
-        gsap.to(cur, 0.2, { x: e.clientX, y: e.clientY });
+        gsap.to(cur, 0.6, { x: e.clientX, y: e.clientY });
         gsap.to(follow, 0.3, { x: e.clientX, y: e.clientY });
     });
 
@@ -57,12 +72,14 @@ function init() {
 
 
 
-    tl2.from(".panel-2", { opacity: 0 })
-        .to(".bio", { opacity: 0 })
-        .to(".header", { opacity: 0 })
-        .to(".hi", { opacity: 0 })
+    tl2.from(".panel-2", { opacity: 0}, "<")
+    .to(".hi", {opacity:0})
+    .to(".header", {opacity:0}, "<")
+    .to(".bio", {opacity:0}, "<")
+    
+       
 
-
+    tl3.from(".panel-3", {opacity:1})
 
     // .from(".navbar", { opacity: 0, duration: 4 }, "<1")
 

@@ -1,10 +1,37 @@
 
 *{cursor: none;}
 
+.container-fluid {
+
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.panel {
+  height: 100vh;
+}
+
+.panel-1 {
+  height: 100vh;
+}
+
+
 .panel-2 {
+  height: 100vh;
+  overflow: hidden;
   background-color: #141414;
   position: relative;
   z-index: 1;
+}
+
+.panel-3 {
+  height: 100vh;
+  background-color: #71816D;
+  position: relative;
+  z-index: 2;
 }
 /* 
 .panel-3 {
@@ -44,49 +71,55 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
+.follower{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  background-color: #ff5850;
+  box-shadow: 0px 0px 20px 9px #ff5850;
+
+  border-radius: 50%;
+  z-index: 2020;
+  opacity: 0.7;
+  user-select: none;
+  pointer-events: none;
+}
+
 .cursor{
     position: fixed;
     top: 0;
     left: 0;
-    width: 20px;
-    height: 20px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
     background-color: #ffffff;
-    mix-blend-mode:screen;
-    opacity: .8;
+    mix-blend-mode:difference;
+    opacity: 1;
     z-index: 2020;
     user-select: none;
     pointer-events: none;
 }
 
-.follower{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 22px;
-    height: 22px;
-    background-color: #ff5850;
-    box-shadow: 0px 0px 10px 1px #ff5850;
-    border-radius: 50%;
-    z-index: 2020;
-    opacity: 0.7;
-    user-select: none;
-    pointer-events: none;
-}
+
 
 
 /* scroll bounce animation */
 
 .scroll {
     position: fixed;
+    z-index: 2020;
     overflow-x: hidden;
-    margin-top: 10rem;
-    margin-left: 95%;
+    margin-top: 70vh;
+    margin-left: 95vw;
     font-size: medium;
     font-family: 'Open-sans', sans-serif;
+    color: #71816D;
     writing-mode: vertical-rl;
     animation: bounce 2s infinite;
     transform: translate(-50%, -50%);
+    
 
 }
 
@@ -169,10 +202,11 @@ margin: auto;
 text-align: center;
 font-size: 18vw;
 font-family: 'Oswald', sans-serif;
--webkit-text-stroke: 1px #252525;
-color: transparent;
+-webkit-text-stroke: 1px #ffffff;
+color: white;
 
 }
+
 
 
 
