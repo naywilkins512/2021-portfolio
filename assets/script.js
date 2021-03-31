@@ -8,7 +8,7 @@ let tl2 = gsap.timeline({
         start: "top top",
         end: "bottom top",
         pin: true,
-        scrub:true,
+        scrub:2,
         pinSpacing: false,
 
     }
@@ -79,7 +79,7 @@ function init() {
     
        
 
-    tl3.from(".panel-3", {opacity:1})
+    tl3.from(".panel-3", {opacity:1, duration:3})
 
     // .from(".navbar", { opacity: 0, duration: 4 }, "<1")
 
@@ -121,18 +121,6 @@ function init() {
         y: 100, opacity: 0
     });
 
-    // code for animating projects out when you scroll to contact
-
-    // gsap.to("#projects > .col-sm", {
-    //     scrollTrigger: {
-    //         trigger: "#projects > .col-sm",
-    //         start: "top 20%",
-    //         end: "bottom top",
-    //         markers:true
-
-    //     },
-    //     y: 10, opacity: 0, ease: "back", stagger: .1, duration: 2
-    // });
 
 
     gsap.from(".navbar", {
