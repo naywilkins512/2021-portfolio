@@ -28,7 +28,7 @@
 
 
 .panel-2 {
-  background-color: #141414;
+  background-color: #292929;
   position: relative;
   z-index: 1;
   
@@ -255,11 +255,36 @@ color: transparent;
     max-width: 100%;
   }
 
-  .cursor{
+  div.cursor{
     display: none;
   }
 
-  .follower{
+  div.follower{
     display: none;
   }
-}
+
+  span.scroll{
+    display: none;
+
+  
+  }
+
+  .hi {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    margin-left: 10px;
+  }
+
+  .header {
+    margin-left: 10px;
+    margin-bottom: 5px;
+
+  }
+
+ .bio {
+   word-wrap: normal;
+   font-size: 1.2rem;
+   margin-left: 10px;
+   margin-bottom: 5px;
+ }
+  }
