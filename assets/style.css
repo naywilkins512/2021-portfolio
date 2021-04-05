@@ -255,5 +255,11 @@ color: transparent;
     max-width: 100%;
   }
 
-  
+  .cursor{
+    display: none;
+  }
+
+  .follower{
+    display: none;
+  }
 }
