@@ -120,9 +120,9 @@ body {
     position: fixed;
     z-index: 2020;
     overflow-x: hidden;
-    margin-top: 70vh;
-    margin-left: 97vw;
-    font-size: medium;
+    margin-top: 75vh;
+    margin-left: 96vw;
+    font-size: 1.2rem;
     font-family: 'Open-sans', sans-serif;
     color: #71816D;
     writing-mode: vertical-rl;
@@ -152,7 +152,7 @@ body {
     color: #252525;
     z-index: -1;
     font-size: 4vw;
-    margin-left: 2.4rem;
+    margin-left: 2.5rem;
     margin-top: 10vh;
     margin-bottom: -15px;
 }
@@ -161,9 +161,8 @@ body {
     z-index: -1;
     overflow-y: hidden;
     overflow-x: hidden;
-    margin: auto;
-    text-align: center;
-    font-size: 18vw;
+    margin-left: 2rem;
+    font-size: 17vw;
     font-family: 'Oswald', sans-serif;
     -webkit-text-stroke: 1px #252525;
     color: transparent;
@@ -172,7 +171,7 @@ body {
 
 .bio {
 font-size: 4vw;
-margin-left: 2.4rem;
+margin-left: 2.5rem;
 }
 
 .project-header{
