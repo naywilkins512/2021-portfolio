@@ -19,7 +19,7 @@ let tl2 = gsap.timeline({
 let tl3 = gsap.timeline({
     scrollTrigger: {
         trigger: ".panel-2",
-        start: "top top",
+        start: "bottom bottom",
         end: "bottom top",
         pin: true,
         scrub:2,

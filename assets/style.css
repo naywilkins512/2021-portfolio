@@ -28,8 +28,6 @@
 
 
 .panel-2 {
-  height: 100vh;
-  overflow: hidden;
   background-color: #141414;
   position: relative;
   z-index: 1;
@@ -177,7 +175,8 @@ margin-left: 2.5rem;
 .project-header{
     /* margin-bottom: 30px; */
     text-align: center;
-    font-size: 15vw;
+    font-size: 12vw;
+    padding: 1vw;
     font-family: 'Oswald', sans-serif;
     -webkit-text-stroke: 1px #fdf7fa;
     color: transparent;
@@ -195,14 +194,14 @@ margin-left: 2.5rem;
 }
 
 
-
-#texas {
+/* 
+.texas {
   width: 50%;
   height: 50%;
   
 
 
-}
+} */
 
 .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.05); }
@@ -224,8 +223,9 @@ margin-left: 2.5rem;
 .contact-header {
 
 margin: auto;
+padding: 3rem;
 text-align: center;
-font-size: 18vw;
+font-size: 12vw;
 font-family: 'Oswald', sans-serif;
 -webkit-text-stroke: 1px #fdf7fa;
 color: transparent;
