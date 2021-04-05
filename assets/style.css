@@ -52,7 +52,7 @@
 
 
 a {
-    color: #252525;
+    color: white;
     border-radius: 8px;
     background-color: none;
     transform-origin: 50% 50%;
@@ -64,7 +64,7 @@ a {
 a:hover {
     transition: color 1s ease;
     transition: background-color 1s ease;
-    color: #fdf7fa;
+    color: #ff5850;
 
     
     
@@ -187,11 +187,7 @@ margin-left: 2.5rem;
   color: #fdf7fa;
 }
 
-.project:hover {
-  color: #ff5850;
-  text-shadow: 0px 0px 10px 1px #ff5850;
-    border-radius: 50%;
-}
+
 
 
 /* 
