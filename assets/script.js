@@ -54,9 +54,9 @@ function init() {
 
     tl.from("body", { ease: "linear", autoAlpha: 0 })
         .from(".hi", { ease: "linear", duration: 1 })
-        .from(".header", { y: -150, duration: 2.5 }, "-=.4")
+        .from(".header", { y: -150, duration: 1 }, "-=.4")
         .from(".bio", { y: 40, duration: 1, ease: "power4" }, "-=1")
-        .from(".scroll", { duration: 2 }, "+=0.2")
+        .from(".scroll2", { duration: 2 }, "+=0.2")
 
     // to be scrolltriggered
 

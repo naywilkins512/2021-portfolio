@@ -114,7 +114,7 @@ body {
 
 /* scroll bounce animation */
 
-.scroll {
+/* .scroll {
     position: fixed;
     z-index: 2020;
     overflow-x: hidden;
@@ -127,6 +127,18 @@ body {
     animation: bounce 2s infinite;
     transform: translate(-50%, -50%);
     
+
+} */
+
+.scroll2 {
+  
+  margin-top: 10px;
+  margin-left: 25px;
+  position: fixed;
+  z-index: 1;
+  animation: bounce 2s infinite;
+  transform: translate(-50%, -50%);
+  
 
 }
 
@@ -259,10 +271,10 @@ padding-bottom: 1px;
     display: none;
   }
 
-  span.scroll{
-    display: none;
 
-  
+
+  span.scroll2{
+    display: block;
   }
 
   .hi {
