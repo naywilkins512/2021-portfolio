@@ -280,8 +280,8 @@ padding-bottom: 1px;
 
   .hi {
     font-size: 2rem;
-    margin-bottom: 5px;
-    margin-left: 10px;
+    margin-bottom: auto;
+    margin-left: 14px;
   }
 
   .header {
@@ -293,7 +293,7 @@ padding-bottom: 1px;
  .bio {
    word-wrap: normal;
    font-size: 1.2rem;
-   margin-left: 10px;
-   margin-bottom: 5px;
+   margin-left: 15px;
+   margin-bottom: auto;
  }
   }
